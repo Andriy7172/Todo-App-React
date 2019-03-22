@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './TaskItem.css';
+import './TaskItem.sass';
 
 import Form from '../Form/Form';
 
@@ -46,23 +46,28 @@ export default class TaskItem extends Component {
     }
 
     return (
-      <div>
-        {this.state.editing ? <Form taskItem = {this.state.task} setItem = {this.editTask} edit /> : <div>
-          <p className = {classNames} >
-            {this.state.task}
-          </p>
-          <input 
-            type = 'button' 
-            value = 'done'
-            onClick = {this.handleDone} />
-          <input 
-            type = 'button' 
-            value = 'edit'
-            onClick = {this.handleEdit} />
-          <input 
-            type = 'button' 
-            value = 'delete'
-            onClick = {this.props.onDelete} />
+      <div className = 'task-item'>
+        {this.state.editing ? <Form taskItem = {this.state.task} setItem = {this.editTask} edit /> : 
+        <div className = 'item'>
+          <div>
+            <p className = {classNames} >
+              {this.state.task}
+            </p>
+          </div>
+          <div>
+            <input 
+              type = 'button' 
+              value = 'done'
+              onClick = {this.handleDone} />
+            <input 
+              type = 'button' 
+              value = 'edit'
+              onClick = {this.handleEdit} />
+            <input 
+              type = 'button' 
+              value = 'delete'
+              onClick = {this.props.onDelete} />
+          </div>
         </div>}
       </div>
     );

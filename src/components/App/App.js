@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.sass';
 
 import Home from '../Home/Home';
 import Form from '../Form/Form';
@@ -25,7 +25,7 @@ class App extends Component {
       return <Home user = {user} />;
     } else {
       return (
-        <div>
+        <div className = 'app-login'>
           <h1>Enter your name</h1>        
           <Form
             setItem = {this.setUser}
@@ -41,7 +41,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className = 'app'>
         <div>Todo app</div>
         {this.logView()}
       </div>

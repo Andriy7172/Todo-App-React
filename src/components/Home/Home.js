@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Home.css';
+import './Home.sass';
 
 import ToDo from '../ToDo/ToDo';
 
@@ -8,7 +8,7 @@ export default class Home extends Component {
     const { user } = this.props;
 
     return (
-      <div>
+      <div className = 'home'>
         <h1>Hello {user}</h1>
         <ToDo />
       </div>

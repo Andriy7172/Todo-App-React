@@ -1,0 +1,49 @@
+$btn-color: #818181
+$btn-color-back: #bcbcbc
+$height: 30px
+$radius: 15px
+
+  
+.task-item
+  border: 1px solid $btn-color
+  margin-bottom: 10px
+  border-radius: 15px
+
+.item
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.item div p
+  margin: 0
+  margin-left: 20px
+
+.item div input[type = button]
+  background: $btn-color-back
+  border: none
+  border-left: 1px solid $btn-color
+  height: $height
+
+.item div input:last-child
+  border-radius: 0 $radius $radius 0
+
+.task-item form
+  height: $height
+
+.task-item form input
+  width: 79%
+  border: none
+  border-radius: $radius 0 0 $radius
+  height: $height
+  padding-left: 20px
+
+.task-item form button
+  width: 21%
+  border-radius: 0 $radius $radius 0
+  height: $height
+  background: $btn-color-back
+  border: none
+  border-left: 1px solid $btn-color
+
+.done
+  text-decoration: line-through

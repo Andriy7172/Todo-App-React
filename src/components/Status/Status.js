@@ -1,5 +1,5 @@
 import React from 'react';
-import './Status.css';
+import './Status.sass';
 
 const Status = ({active, done}) => {
   return (

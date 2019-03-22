@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './ToDo.css';
+import './ToDo.sass';
 
 import Form from '../Form/Form';
 import Repeater from '../Repeater/Repeater';
@@ -87,7 +87,7 @@ export default class ToDo extends Component {
     const activeCount = tasks.length - doneCount;
 
     return(
-      <div>
+      <div className = 'todo'>
         <h2>List Of Task</h2>
         <Status
           active = {activeCount}

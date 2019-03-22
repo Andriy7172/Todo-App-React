@@ -1,5 +1,5 @@
 import React from 'react';
-import './Repeater.css';
+import './Repeater.sass';
 
 const Repeater = ({ items, Item, onDelete, onDone }) => {
   let elements;
@@ -18,7 +18,7 @@ const Repeater = ({ items, Item, onDelete, onDone }) => {
   }  
 
   return(
-    <ul>
+    <ul className = 'repeater'>
       {elements}
     </ul>
   );
