@@ -47,7 +47,7 @@ export default class TaskItem extends Component {
 
     return (
       <div>
-        {this.state.editing ? <Form taskItem = {this.state.task} setItem = {this.editTask} login /> : <div>
+        {this.state.editing ? <Form taskItem = {this.state.task} setItem = {this.editTask} edit /> : <div>
           <p className = {classNames} >
             {this.state.task}
           </p>
