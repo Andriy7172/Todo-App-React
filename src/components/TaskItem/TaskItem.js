@@ -68,6 +68,7 @@ export default class TaskItem extends Component {
               value = 'delete'
               onClick = {this.props.onDelete} />
           </div>
+ 
         </div>}
       </div>
     );

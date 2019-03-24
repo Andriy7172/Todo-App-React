@@ -1,5 +1,6 @@
-$btn-color: #818181
-$btn-color-back: #bcbcbc
+$btn-color: #fff
+$btn-color-back: #463a7e
+$btn-color-back-hover: #181d41
 $height: 30px
 $radius: 15px
 
@@ -14,15 +15,26 @@ $radius: 15px
   justify-content: space-between
   align-items: center
 
+.item > div:first-child
+  padding: 5px 10px 5px 10px
+
+.item > div:last-child
+  display: flex
+  align-self: stretch
+
 .item div p
   margin: 0
-  margin-left: 20px
 
 .item div input[type = button]
   background: $btn-color-back
   border: none
   border-left: 1px solid $btn-color
-  height: $height
+  height: 100%
+  color: $btn-color
+  transition: background 0.25s
+
+.item div input[type = button]:hover
+  background: $btn-color-back-hover
 
 .item div input:last-child
   border-radius: 0 $radius $radius 0
@@ -31,16 +43,16 @@ $radius: 15px
   height: $height
 
 .task-item form input
-  width: 79%
+  width: 65%
   border: none
   border-radius: $radius 0 0 $radius
-  height: $height
+  height: 100%
   padding-left: 20px
 
 .task-item form button
-  width: 21%
+  width: 35%
   border-radius: 0 $radius $radius 0
-  height: $height
+  height: 100%
   background: $btn-color-back
   border: none
   border-left: 1px solid $btn-color

@@ -1,18 +1,27 @@
-$btn-color: #818181
-$btn-color-back: #bcbcbc
+$btn-color: #fff
+$btn-color-back: #463a7e
+$btn-color-back-hover: #181d41
 $height: 30px
 $radius: 15px
 
 .todo form input
-  width: 79%
+  width: 65%
   height: $height
+  color: $btn-color
   border-radius: $radius 0 0 $radius
-  border: 1px solid #818181
+  border: 1px solid $btn-color
   border-right: none
+  background: inherit
+  padding-left: 10px
 
 .todo form button
-  width: 21%
+  width: 35%
+  color: $btn-color
   height: $height
   border-radius: 0 $radius $radius 0
   background: $btn-color-back
   border: 1px solid $btn-color
+  transition: background 0.25s
+
+.todo form button:hover
+  background: $btn-color-back-hover

@@ -1,7 +1,8 @@
-$login-color: #9a9a9a
+$login-color: #fff
+$login-color-btn: #463a7e
+$login-color-btn-hover: #181d41
 $login-height: 40px
 $login-radius: 20px
-$login-color-hover: #727272
   
 .app
   width: 600px
@@ -16,15 +17,13 @@ $login-color-hover: #727272
   text-transform: uppercase
   margin-bottom: 60px
 
-.app-login
+.app
   width: 400px
   height: 300px
   position: absolute
   left: 50%
-  top: 50%
+  top: 30%
   transform: translate(-50%, -50%)
-  border: 1px solid $login-color
-  border-radius: 20px
   padding: 20px
 
 .app-login form
@@ -32,26 +31,29 @@ $login-color-hover: #727272
 
 .app-login input[type=text]
   height: $login-height
-  background: #fff
+  background: inherit
   border: 1px solid $login-color
+  border-right: none
   width: 80%
   border-radius: $login-radius 0 0 $login-radius
+  padding-left: 10px
 
 .app-login input:focus
-  background: #fff
+  background: inherit
   padding-left: 10px
+  color: $login-color
 
 .app-login button
   height: $login-height
-  background: $login-color
+  background: $login-color-btn
   border: 0
   color: #fff
   border: 1px solid $login-color
   width: 20%
   text-transform: uppercase
   border-radius: 0 $login-radius $login-radius 0
-  transition: background 0.25s, border-radius 0.25s
+  transition: background 0.25s
 
 .app-login button:hover
-  background: $login-color-hover
-  border: 1px solid $login-color-hover
+  background: $login-color-btn-hover
+  border: 1px solid $login-color
